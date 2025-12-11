@@ -1,3 +1,4 @@
+// フェードアップ
 const targets = document.querySelectorAll('.fade-up');
 
 const observer = new IntersectionObserver((entries) => {
