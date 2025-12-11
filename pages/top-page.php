@@ -42,3 +42,20 @@
     <p>初めてのご来店でも、どうぞ安心してお越しください。わんちゃん一頭ずつ丁寧にカウンセリングし、負担の少ない施術を心がけています。苦手な作業や皮膚の状態、いつもの生活スタイルなど、気になることは何でもお聞かせください。「また来たい」と思ってもらえるよう、やさしい時間と仕上がりをお届けします。</p>
   </div>
 </section>
+
+<div class="satisfaction">
+  <h2>ご満足いただいたお客様</h2>
+  <span>@minami-dogsalon フォローする</span>
+  <div class="gallery">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog01.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog02.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog03.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog04.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog05.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog06.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog07.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog08.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog09.webp" alt="施術後の犬">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/dog10.webp" alt="施術後の犬">
+  </div>
+</div>
