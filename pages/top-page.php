@@ -43,19 +43,21 @@
   </div>
 </section>
 
-<div class="satisfaction">
-  <h2>ご満足いただいたお客様</h2>
-  <span>@minami-dogsalon フォローする</span>
-  <div class="gallery">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog01.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog02.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog03.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog04.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog05.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog06.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog07.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog08.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog09.webp" alt="施術後の犬">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/dog10.webp" alt="施術後の犬">
+<div class="gallery">
+  <div class="gallery__title">
+    <h2>満足げなワンちゃん達</h2>
+    <span>@minami-dogsalon フォローする</span>
+  </div>
+  <div class="gallery__imgs">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog01.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog02.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog03.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog04.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog05.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog06.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog07.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog08.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog09.webp" alt="施術後の犬">
+    <img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog10.webp" alt="施術後の犬">
   </div>
 </div>
