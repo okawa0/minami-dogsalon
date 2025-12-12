@@ -31,7 +31,6 @@ triggers.forEach(box => {
   });
 });
 
-
 // 背景クリックで閉じる
 popupOverlay.addEventListener('click', (e) => {
   if (e.target === popupOverlay) {
@@ -44,4 +43,19 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     popupOverlay.classList.remove('is-active');
   }
+});
+
+
+const gallery = document.getElementById('galleryImgs');
+const btnLeft = document.getElementById('arrowLeft');
+const btnRight = document.getElementById('arrowRight');
+
+btnRight.addEventListener('click', () => {
+  const imgWidth = gallery.querySelector('.item').offsetWidth;
+  gallery.scrollLeft += imgWidth;
+});
+
+btnLeft.addEventListener('click', () => {
+  const imgWidth = gallery.querySelector('.item').offsetWidth;
+  gallery.scrollLeft -= imgWidth;
 });
