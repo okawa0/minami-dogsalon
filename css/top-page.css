@@ -274,7 +274,7 @@
 .voice {
   background-color: #f0f2f5;
   padding-block: 5rem;
-  h2{
+  h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 5rem;
@@ -284,7 +284,7 @@
   }
   .voice-cards {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 5rem;
     @media (max-width: 899px) {
       flex-direction: column;
@@ -304,6 +304,38 @@
       path {
         fill: #333;
       }
+    }
+  }
+}
+
+.opening-hours {
+  background-image: url(../img/opening-hours.webp);
+  background-size: cover;
+  padding-block: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:rgb(54, 60, 69, 0.8);;
+    z-index: 1;
+  }
+  h2{
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+  }
+  .hours-content{
+    z-index: 2;
+    p{
+      color: #fff;
+      font-size: 1.6rem;
+      line-height: 1.6;
     }
   }
 }

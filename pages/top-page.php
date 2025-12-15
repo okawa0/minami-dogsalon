@@ -133,3 +133,12 @@
     </div>
   </div>
 </div>
+
+<div class="opening-hours">
+  <h2>営業時間</h2>
+  <div class="hours-content">
+    <p>平日：09:00 - 18:00</p>
+    <p>土曜：10:00 - 14:00</p>
+    <p>日曜・定休日</p>
+  </div>
+</div>
