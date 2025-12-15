@@ -10,4 +10,23 @@ footer{
       height: 32px;
     }
   }
+  .footer__menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    a {
+      text-decoration: none;
+      color: rgb(54, 178, 176);
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer__copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+  }
 }

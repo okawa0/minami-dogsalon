@@ -133,6 +133,9 @@
   padding-block: 6rem;
   justify-content: center;
   align-items: center;
+  @media (max-width: 899px) {
+    padding-block: 0;
+  }
   .intro__content {
     background-color: #8c6458;
     padding: 2rem 3rem;
@@ -200,6 +203,9 @@
     h2 {
       color: #fff;
       font-size: 3rem;
+      @media (max-width: 899px) {
+        font-size: 2rem;
+      }
     }
     span {
       color: #fff;
