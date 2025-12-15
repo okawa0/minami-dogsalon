@@ -1,7 +1,7 @@
 <section class="hero">
   <div class="hero__title">
     <h1 class="fade-up">みなみ<br>ドッグサロン</h1>
-    <p class="fade-up">スタイリストが愛情を込めてお手入れをいたします</p>
+    <p class="fade-up">スタイリストが愛情を込めて<br class="sp-only">お手入れをいたします</p>
     <a class="cta fade-up" href="#">今すぐ予約</a>
   </div>
 </section>

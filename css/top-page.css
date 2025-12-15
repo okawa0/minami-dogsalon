@@ -64,9 +64,14 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
       color: #fff;
       @media (max-width: 899px) {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-bottom: 3rem;
         margin-left: 0;
+      }
+      .sp-only {
+        @media (min-width: 900px) {
+          display: none;
+        }
       }
     }
   }
@@ -149,7 +154,7 @@
       max-width: 30ch;
       line-height: 1.6;
       @media (max-width: 899px) {
-        max-width: 80%;
+        max-width: 96%;
       }
     }
   }
@@ -202,60 +207,60 @@
   }
   .gallery-wrapper {
     position: relative;
-  .gallery__imgs {
-    display: flex;
-    overflow-x: auto;
-    padding: 1rem;
-    scroll-behavior: smooth;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    .img-hover {
-      position: relative;
-      display: inline-block;
-      flex-shrink: 0;
-      &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease;
+    .gallery__imgs {
+      display: flex;
+      overflow-x: auto;
+      padding: 1rem;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        display: none;
       }
-      &:hover {
-        cursor: pointer;
+      .img-hover {
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
         &::after {
-          opacity: 1;
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        &:hover {
+          cursor: pointer;
+          &::after {
+            opacity: 1;
+          }
+        }
+        .item {
+          width: clamp(240px, 30vw, 420px);
         }
       }
-      .item {
-        width: clamp(240px, 30vw, 420px);
+    }
+    .arrow {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem 1rem;
+      cursor: pointer;
+      border-radius: 50%;
+      color: #333;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      &.left {
+        left: 3rem;
+      }
+      &.right {
+        right: 3rem;
       }
     }
-  }
-  .arrow {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem 1rem;
-    cursor: pointer;
-    border-radius: 50%;
-    color: #333;
-    display: grid;
-    place-items: center;
-        position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
-    &.left {
-      left: 3rem;
-    }
-    &.right {
-      right: 3rem;
+    .arrow svg {
+      width: 24px;
+      height: 24px;
     }
   }
-  .arrow svg {
-    width: 24px;
-    height: 24px;
-  }
-}
 }
