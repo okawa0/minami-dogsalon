@@ -270,3 +270,22 @@
     }
   }
 }
+
+.voice {
+  background-color: #f0f2f5;
+  padding-block: 1rem;
+  h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 5rem;
+  }
+  .voice-cards {
+    svg {
+      width: 100px;
+      height: 100px;
+      path {
+        fill: #333;
+      }
+    }
+  }
+}
