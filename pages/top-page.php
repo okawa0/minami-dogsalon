@@ -144,5 +144,30 @@
 </div>
 
 <div class="contact">
-
+  <h2>お問い合わせ</h2>
+  <form action="/my-handling-form-page" method="post">
+    <p>
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="user_name" />
+    </p>
+    <p>
+      <label for="name">ふりがな</label>
+      <input type="text" id="name" name="user_name" />
+    </p>
+    <p>
+      <label for="mail">メールアドレス</label>
+      <input type="email" id="mail" name="user_email" />
+    </p>
+    <p>
+      <label for="tel">電話番号</label>
+      <input type="tel" id="tel" name="user_tel" />
+    </p>
+    <p>
+      <label for="msg">メッセージ</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </p>
+    <p class="button">
+      <button type="submit">送信</button>
+    </p>
+  </form>
 </div>
