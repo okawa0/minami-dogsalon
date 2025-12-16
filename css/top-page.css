@@ -191,6 +191,11 @@
   &.is-active {
     display: flex;
   }
+  .aside {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .gallery {
@@ -350,6 +355,7 @@
     width: 90%;
   }
   h2{
+    margin-top: 2rem;
     margin-bottom: 2rem;
     font-size:2.5rem;
   }

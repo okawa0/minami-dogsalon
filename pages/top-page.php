@@ -46,6 +46,11 @@
 <div class="popup-overlay" id="popupOverlay">
   <div class="popup-content">
     <img id="popupImage" src="" alt="">
+    <div class="aside">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 </div>
 

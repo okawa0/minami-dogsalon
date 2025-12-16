@@ -25,8 +25,8 @@ const popupImage = document.getElementById('popupImage');
 
 triggers.forEach(box => {
   box.addEventListener('click', () => {
-    const img = box.querySelector('img'); // ← 中の画像を取得
-    popupImage.src = img.src;             // ← これで正しい src が入る
+    const img = box.querySelector('img'); 
+    popupImage.src = img.src;
     popupOverlay.classList.add('is-active');
   });
 });
