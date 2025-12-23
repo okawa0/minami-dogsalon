@@ -375,11 +375,20 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 5;
+      @media (max-width: 899px) {
+        padding: 0.5rem 0.5rem;
+      }
       &.left {
         left: 3rem;
+        @media (max-width: 899px) {
+          left: 1rem;
+        }
       }
       &.right {
         right: 3rem;
+        @media (max-width: 899px) {
+          right: 1rem;
+        }
       }
     }
     .arrow svg {
