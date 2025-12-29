@@ -32,11 +32,13 @@ triggers.forEach(box => {
 });
 
 // 背景クリックで閉じる
-popupOverlay.addEventListener('click', (e) => {
-  if (e.target === popupOverlay) {
-    popupOverlay.classList.remove('is-active');
-  }
-});
+if (popupOverlay) {
+  popupOverlay.addEventListener('click', (e) => {
+    if (e.target === popupOverlay) {
+      popupOverlay.classList.remove('is-active');
+    }
+  });
+}
 
 // ESCキーでも閉じる
 document.addEventListener('keydown', (e) => {
@@ -45,32 +47,37 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// ギャラリー画像の左右スクロール
 const gallery = document.getElementById('galleryImgs');
 const btnLeft = document.getElementById('arrowLeft');
 const btnRight = document.getElementById('arrowRight');
 
+if (btnRight){
 btnRight.addEventListener('click', () => {
   const imgWidth = gallery.querySelector('.item').offsetWidth;
   gallery.scrollLeft += imgWidth;
 });
+}
 
+if(btnLeft){
 btnLeft.addEventListener('click', () => {
   const imgWidth = gallery.querySelector('.item').offsetWidth;
   gallery.scrollLeft -= imgWidth;
 });
+}
 
 // ヘッダー高さ吸収
 const header = document.querySelector('.site-header');
 document.documentElement.style.paddingTop =`${header.offsetHeight}px`;
 
-
 // ポップアップ閉じるボタン
 const closeBtn = popupOverlay.querySelector('.modal__close');
 
-closeBtn.addEventListener('click', () => {
-  popupOverlay.classList.remove('is-active');
-});
-
+if (closeBtn){
+  closeBtn.addEventListener('click', () => {
+    popupOverlay.classList.remove('is-active');
+  });
+}
 
 // ポップアップ内の画像切り替え
 const items = document.querySelectorAll('#galleryImgs .item');
@@ -79,7 +86,6 @@ const nextBtn = document.querySelector('.arrow--next');
 
 let currentIndex = 0;
 
-// 初期表示（ポップアップを開いたタイミングで呼ぶ想定）
 popupImage.src = items[currentIndex].src;
 
 nextBtn.addEventListener('click', () => {
@@ -99,7 +105,6 @@ document.querySelectorAll('.popup-trigger').forEach((trigger, index) => {
     popupOverlay.classList.add('is-open');
   });
 });
-
 
 // サービスページのタブ切り替え
 const tabs = document.querySelectorAll('.tab');
