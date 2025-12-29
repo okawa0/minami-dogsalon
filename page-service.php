@@ -12,15 +12,17 @@ get_header();
   </div>
   <div class="service__menus">
     <div class="tabs">
-      <button class="tab is-active" data-tab="tab1">Tab1</button>
-      <button class="tab" data-tab="tab2">Tab2</button>
-      <button class="tab" data-tab="tab3">Tab3</button>
+      <button class="tab is-active" data-tab="tab1">全てのサービス</button>
+      <button class="tab" data-tab="tab2">小型犬</button>
+      <button class="tab" data-tab="tab3">中型犬</button>
+      <button class="tab" data-tab="tab4">大型犬</button>
       <span class="tab-underline"></span>
     </div>
     <div class="tab-contents">
-      <div class="tab-content is-active" id="tab1">コンテンツ1</div>
+      <div class="tab-content is-active" id="tab1"><div><p>シャンプー＆ブロー</p><p>この欄にコンテンツを入れます</p></div></div>
       <div class="tab-content" id="tab2">コンテンツ2</div>
       <div class="tab-content" id="tab3">コンテンツ3</div>
+      <div class="tab-content" id="tab4">コンテンツ4</div>
     </div>
   </div>
 </main>

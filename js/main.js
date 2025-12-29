@@ -1,3 +1,6 @@
+(() => {
+  if (!document.body.classList.contains('home')) return;
+
 // フェードアップ・フェードダウン
 // 汎用フェード処理
 function setupFade(className) {
@@ -106,6 +109,9 @@ document.querySelectorAll('.popup-trigger').forEach((trigger, index) => {
   });
 });
 
+})();
+
+
 // サービスページのタブ切り替え
 const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll('.tab-content');
@@ -137,7 +143,7 @@ tabs.forEach(tab => {
   });
 });
 
-// 初期化
+//初期化
 const activeTab = document.querySelector('.tab.is-active');
 if (activeTab) {
   moveUnderline(activeTab);
